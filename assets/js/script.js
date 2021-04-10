@@ -10,8 +10,17 @@ var answer2 = document.getElementById('answer2')
 var question3 = document.getElementById('question3')
 var answer3 = document.getElementById('answer3')
 var lastPage = document.getElementById('lastPage')
-var timeSet = document.getElementById('timer')
-var time = 60;
+var seconds = document.getElementById('countdown').textContent;
+
+var countdown = setInterval(function()
+{
+    seconds--;
+    document.getElementById("countdown").textContent = seconds;
+    if (seconds <= 0) clearInterval(countdown);
+}, 1000);
+
+
+
 
 //This hides the first page and shows the second page//
 function clickStart(){
