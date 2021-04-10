@@ -7,34 +7,80 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Code Quiz</title>
 </head>
+
 <body>
-    <div id="quizStart">
+<!--First Page-->
+<div id="quizStart">
     <h1>Coding Quiz Challenge!</h1>
         <p class="middle">Try to answer the following code-related questions within the time limit.<br>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</br>
         </p>
     <div class= "container">
         <div class= "center">
             <button class="button" id="start-button">Start Quiz</button>
-            </div>
         </div>
     </div>
+</div>
+
+<!--Second Page-->
+<div id="firstQuestion">
     <div class="hidden" id="question1">
-        <h1>Question #1: Does this course make you want to die?</h1>
-            <div class="buttons">
-                <button>A</button>
-                <p>This is an answer</p>
-                <button>B</button>
-                <p>This is an answer</p>
-                <button>C</button>
-                <p>This is an answer</p>
+        <h1>Question #1: This is question 1</h1>
+            <div class="buttons" id="answer1">
+                <button>A
+                    <p>This is an answer.</p>
+                </button>
+                <button>B
+                    <p>This is an answer.</p>
+                </button>
+                <button>C
+                    <p>This is an answer.</p>
+                </button>
             </div>
     </div>
+</div>
+
+<!--Third Page-->
+<div id="secondQuestion">
     <div class="hidden" id="question2">
-        <h1>Question #2: What the hell am I doing?</h1>
+    <h1>Question #2: This is question 2</h1>
+        <div class="buttons" id="answer2">
+            <button>A
+                <p>This is an answer.</p>
+            </button>
+            <button>B
+                <p>This is an answer.</p>
+            </button>
+            <button>C
+                <p>This is an answer.</p>
+            </button>
+        </div>    
     </div>
+</div>
 
+<!--Fourth Page-->
+<div id="thirdQuestion">
+    <div class="hidden" id="question3">
+    <h1>Question #3: This is question 3</h1>
+        <div class="buttons" id="answer3">
+            <button>A
+                <p>This is an answer.</p>
+            </button>
+            <button>B
+                <p>This is an answer.</p>
+            </button>
+            <button>C
+                <p>This is an answer.</p>
+            </button>
+        </div>
+    </div>
+</div>
 
-
+<!--Last Page-->
+<div id="viewScore">
+    <div class="hidden" id="lastPage">
+    <h1>This is the final page</h1>
+    </div>
+</div>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
